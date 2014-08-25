@@ -1,0 +1,171 @@
+﻿<Window x:Class="Template_Wpf.EditSettingsWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="EditSettingsWindow" Height="600" Width="450">
+    <DockPanel LastChildFill="True">
+        <Menu Height="22" DockPanel.Dock="Top" Name="menu1" VerticalAlignment="Top">
+            <MenuItem Header="Open Settings…" Click="OpenSettings_Click" />
+            <MenuItem Header="Save Settings As…" Click="SaveAs_Click" />
+            <MenuItem Header="Apply Settings" Click="ApplySettings_Click" />
+        </Menu>
+        <!-- Label -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <Label Content="Label" Style="{StaticResource dialogLabel}" DockPanel.Dock="Left" />
+            <TextBox Text="{Binding Settings.Label}" Style="{StaticResource defaultTextBox}" DockPanel.Dock="Right"></TextBox>
+        </DockPanel>
+        <!-- Description -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <Label Content="Descripiton" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource dialogLabel}" DockPanel.Dock="Left" />
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <TextBox Text="{Binding Settings.Description}" Style="{StaticResource defaultTextBox}" DockPanel.Dock="Right" Height="50"></TextBox>
+        </DockPanel>
+        <ScrollViewer DockPanel.Dock="Top">
+            <DockPanel>
+        <!-- Timestamp Correction -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <Label Content="Timestamp Correction" Style="{StaticResource dialogLabel}" DockPanel.Dock="Left" />
+            <CheckBox IsChecked="{Binding Settings.IsTimestampCorrectionEnabled}" Style="{StaticResource defaultCheckBox}" DockPanel.Dock="Left" />
+        </DockPanel>
+        <!-- Reader Mode -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <Label Content="Reader Mode" Style="{StaticResource dialogLabel}" DockPanel.Dock="Left" />
+            <ComboBox SelectedValue="{Binding Settings.ReaderMode}" Height="25" SelectedValuePath="ReaderMode" DisplayMemberPath="Label" ItemsSource="{Binding ReaderModes}">
+            </ComboBox>
+        </DockPanel>
+        <!-- Search Mode -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <Label Content="Search Mode" Style="{StaticResource dialogLabel}" DockPanel.Dock="Left" />
+            <ComboBox SelectedValue="{Binding Settings.SearchMode}" Height="25" SelectedValuePath="SearchMode" DisplayMemberPath="Label" ItemsSource="{Binding SearchModes}">
+            </ComboBox>
+        </DockPanel>
+        <!-- Session -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <Label Content="Session" Style="{StaticResource dialogLabel}" DockPanel.Dock="Left" />
+            <TextBox Text="{Binding Settings.Session}" Style="{StaticResource defaultTextBox}" DockPanel.Dock="Right"></TextBox>
+        </DockPanel>
+        <!-- Tag Population Estimate -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <Label Content="Tag Population Estimate" Style="{StaticResource dialogLabel}" DockPanel.Dock="Left" />
+            <TextBox Text="{Binding Settings.TagPopulationEstimate}" Style="{StaticResource defaultTextBox}" DockPanel.Dock="Right"></TextBox>
+        </DockPanel>
+        <!-- Antennas -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <ListBox ItemsSource="{Binding Settings.Antennas}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                            <Label Content="{Binding PortNumber}" ContentStringFormat="Port {0}" />
+                            <CheckBox IsChecked="{Binding IsEnabled}" Content="Enabled" Style="{Binding defaultCheckBox}" />
+                            <Label Content="Rx Dbm" Style="{StaticResource defaultLabel}" />
+                            <TextBox Style="{StaticResource defaultTextBox}" Text="{Binding RxSensitivityInDbm}" Width="50" />
+                            <Label Content="Tx Dbm" />
+                            <TextBox Style="{StaticResource defaultTextBox}" Text="{Binding TxPowerInDbm}" Width="50" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </DockPanel>
+        <!-- AutoStart -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="Delay in ms" Style="{StaticResource defaultLabel}" />
+                <TextBox Text="{Binding Settings.AutoStart.FirstDelayInMs}" Style="{StaticResource defaultTextBox}"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="GPI Level" Style="{StaticResource defaultLabel}" />
+                <CheckBox IsChecked="{Binding Settings.AutoStart.GpiLevel}" Style="{StaticResource defaultCheckBox}"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="GPI Port Number" Style="{StaticResource defaultLabel}" />
+                <RadioButton Content="1" IsChecked="{Binding AutoStartGpiPortNumber1IsChecked}" />
+                <RadioButton Content="2" IsChecked="{Binding AutoStartGpiPortNumber2IsChecked}" />
+                <RadioButton Content="3" IsChecked="{Binding AutoStartGpiPortNumber3IsChecked}" />
+                <RadioButton Content="4" IsChecked="{Binding AutoStartGpiPortNumber4IsChecked}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="Mode" Style="{StaticResource defaultLabel}" />
+                <ComboBox SelectedValue="{Binding Settings.AutoStart.Mode}" Height="25" SelectedValuePath="AutoStartMode" DisplayMemberPath="Label" ItemsSource="{Binding AutoStartModes}">
+                </ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="Period in MS" Style="{StaticResource defaultLabel}" />
+                <TextBox Text="{Binding Settings.AutoStart.PeriodInMs}" Style="{StaticResource defaultTextBox}"  />
+            </StackPanel>
+        </DockPanel>
+        <!-- AutoStop -->
+        <DockPanel DockPanel.Dock="Top" LastChildFill="True">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="Duration in ms" Style="{StaticResource defaultLabel}" />
+                <TextBox Text="{Binding Settings.AutoStop.DurationInMs}" Style="{StaticResource defaultTextBox}"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="GPI Level" Style="{StaticResource defaultLabel}" />
+                <CheckBox IsChecked="{Binding Settings.AutoStop.GpiLevel}" Style="{StaticResource defaultCheckBox}"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="GPI Port Number" Style="{StaticResource defaultLabel}" />
+                <RadioButton Content="1" IsChecked="{Binding AutoStopGpiPortNumber1IsChecked}" />
+                <RadioButton Content="2" IsChecked="{Binding AutoStopGpiPortNumber2IsChecked}" />
+                <RadioButton Content="3" IsChecked="{Binding AutoStopGpiPortNumber3IsChecked}" />
+                <RadioButton Content="4" IsChecked="{Binding AutoStopGpiPortNumber4IsChecked}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                <Label Content="Mode" Style="{StaticResource defaultLabel}" />
+                <ComboBox SelectedValue="{Binding Settings.AutoStop.Mode}" Height="25" SelectedValuePath="AutoStopMode" DisplayMemberPath="Label" ItemsSource="{Binding AutoStopModes}">
+                </ComboBox>
+            </StackPanel>
+                    <StackPanel>
+                        <Label Content="Reporting"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Include Antenna Port Number" Width="200" Style="{StaticResource defaultLabel}" />
+                            <CheckBox IsChecked="{Binding Settings.Report.IncludeAntennaPortNumber}" Style="{StaticResource defaultCheckBox}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Include Channel" Width="200" Style="{StaticResource defaultLabel}" />
+                            <CheckBox IsChecked="{Binding Settings.Report.IncludeChannel}" Style="{StaticResource defaultCheckBox}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Include First Seen Time" Width="200" Style="{StaticResource defaultLabel}" />
+                            <CheckBox IsChecked="{Binding Settings.Report.IncludeFirstSeenTime}" Style="{StaticResource defaultCheckBox}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Include Last Seen Time" Width="200" Style="{StaticResource defaultLabel}" />
+                            <CheckBox IsChecked="{Binding Settings.Report.IncludeLastSeenTime}" Style="{StaticResource defaultCheckBox}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Include Peak Rssi" Width="200" Style="{StaticResource defaultLabel}" />
+                            <CheckBox IsChecked="{Binding Settings.Report.IncludePeakRssi}" Style="{StaticResource defaultCheckBox}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Include Phase Angle" Width="200" Style="{StaticResource defaultLabel}" />
+                            <CheckBox IsChecked="{Binding Settings.Report.IncludePhaseAngle}" Style="{StaticResource defaultCheckBox}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Include Seen Count" Width="200" Style="{StaticResource defaultLabel}" />
+                            <CheckBox IsChecked="{Binding Settings.Report.IncludeSeenCount}" Style="{StaticResource defaultCheckBox}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                            <Label Content="Report Mode" Style="{StaticResource defaultLabel}" />
+                            <ComboBox SelectedValue="{Binding Settings.Report.Mode}" Height="25" SelectedValuePath="ReportMode" DisplayMemberPath="Label" ItemsSource="{Binding ReportModes}">
+                            </ComboBox>
+                        </StackPanel>
+                    <!-- GPIs -->
+                    <ListView ItemsSource="{Binding Settings.Gpis}" DockPanel.Dock="Top">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label Width="70" Content="{Binding PortNumber}" ContentStringFormat="Port {0}" Style="{StaticResource defaultLabel}" />
+                                    <CheckBox IsChecked="{Binding IsEnabled}" Style="{StaticResource defaultCheckBox}" Content="Enabled" />
+                                    <Label Content="Debounce in ms" Style="{StaticResource defaultLabel}" />
+                                    <TextBox Text="{Binding DebounceInMs}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    </StackPanel>
+                </DockPanel>
+            </DockPanel>
+        </ScrollViewer>
+    </DockPanel>
+</Window>

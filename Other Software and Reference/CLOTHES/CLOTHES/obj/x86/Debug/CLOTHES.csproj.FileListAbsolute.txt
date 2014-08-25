@@ -1,0 +1,53 @@
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\bin\Debug\CLOTHES.pdb
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Form1.resources
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Properties.Resources.resources
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.exe
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.pdb
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.exe
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.pdb
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe.config
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\bin\Debug\CLOTHES.pdb
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Form1.resources
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Properties.Resources.resources
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\C HOME\mytest\inpinj\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\00000study\vs_test\inpinj\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe.config
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe.config
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.exe
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.pdb
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\bin\Debug\CLOTHES.pdb
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Form1.resources
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Properties.Resources.resources
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\00000study\vs_test\test_cs\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\C HOME\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe.config
+E:\C HOME\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.exe
+E:\C HOME\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.pdb
+E:\C HOME\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe
+E:\C HOME\CLOTHES\CLOTHES\bin\Debug\CLOTHES.pdb
+E:\C HOME\CLOTHES\CLOTHES\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\C HOME\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Form1.resources
+E:\C HOME\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Properties.Resources.resources
+E:\C HOME\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\C HOME\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe.config
+I:\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.exe
+I:\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.pdb
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe.config
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.exe
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.pdb
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\bin\Debug\CLOTHES.exe
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\bin\Debug\CLOTHES.pdb
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Form1.resources
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\obj\x86\Debug\CLOTHES.Properties.Resources.resources
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\00000study\VISUALC\vs_test\reserve\inpinj5242050\CLOTHES\CLOTHES\obj\x86\Debug\GenerateResource.write.1.tlog

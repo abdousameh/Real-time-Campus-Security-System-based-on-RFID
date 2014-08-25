@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="sqlitetest.exe" version="1.0.0.0" publicKeyToken="8f187a4dd165b919" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="sqlitetest" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="sqlitetest.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Sentinel.v3.5Client" version="3.5.0.0" publicKeyToken="b03f5f7f11d50a3a" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.66.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="amd64" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="sqlitetest.exe" size="11264">
+      <assemblyIdentity name="sqlitetest" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9ivrE2067Y0jK9qSdheYFR/zw6g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="sqlitetest.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QfSKIzVbBNiLF2v+alrddEaDJOY=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ldy-PC\ldy" issuerKeyHash="62ac903ac5a2f911b330745961abfd6592deafb3" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>3fk9JWADvG3SdL3xG6e4O9Yr7jI=</DigestValue></Reference></SignedInfo><SignatureValue>OJlFzkBbDZ9bkdRq8QK/3A4EJL+Y5OIUg4AvRRQmgIxmdwhedwfxXRf207w3TDWZt/izkmwwpmxnepBaNsTkyhykI+yQlqVuT26+1Cd7KqmA7omi3OwJtcumIQmfFkiDZ7mi3Q7FoNjhqOfBn4IcYszMddwkQtGfIVyFyYm1awk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1Dq+NkS4vesBV2n3f4SKeqwsJzbBm+5svu+9zWxlnyGNkUZp5srSluupYaVXRJeYNWcWry4DI7H1GI0umsaeHxaIGtWm6JRiNpxHomeYQzQGJpSkdDaRXb7JFGDICKJM+dGU8L9Tr3b457ESQsB01T59x3Cm/Somr413hH3REok=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="32ee2bd63bb8a71bf1bd74d26dbc0360253df9dd" Description="" Url=""><as:assemblyIdentity name="sqlitetest.exe" version="1.0.0.0" publicKeyToken="8f187a4dd165b919" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ldy-PC\ldy</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Vns1SdR8Qx0w8Ir+MVHVOUMePKU=</DigestValue></Reference></SignedInfo><SignatureValue>R1gF4GrwWAvnn8KJlDMB+bw8D5JIL0aVDvQbOkfDpn8f40+tVroihAwBdbfX7ZH1R3V+BMW8Rrx9QjJgvinN+xNVn/caqsCs8ikFGiHp/WyczKz0VvLZJzg96cYipAtoGkVx1pbQXlwgzG99dRuSB+djkntBGSbegLojN/E/hK4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1Dq+NkS4vesBV2n3f4SKeqwsJzbBm+5svu+9zWxlnyGNkUZp5srSluupYaVXRJeYNWcWry4DI7H1GI0umsaeHxaIGtWm6JRiNpxHomeYQzQGJpSkdDaRXb7JFGDICKJM+dGU8L9Tr3b457ESQsB01T59x3Cm/Somr413hH3REok=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQHfWQhvsR1a1GRZTl2GW85zANBgkqhkiG9w0BAQUFADAfMR0wGwYDVQQDHhQAbABkAHkALQBQAEMAXABsAGQAeTAeFw0xMjA5MjkxMDA5MzhaFw0xMzA5MjkxNjA5MzhaMB8xHTAbBgNVBAMeFABsAGQAeQAtAFAAQwBcAGwAZAB5MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDUOr42RLi96wFXafd/hIp6rCwnNsGb7my+773NbGWfIY2RRmnmytKW66lhpVdEl5g1ZxavLgMjsfUYjS6axp4fFoga1abolGI2nEeiZ5hDNAYmlKR0NpFdvskUYMgIokz50ZTwv1OvdvjnsRJCwHTVPn3HcKb9KiavjXeEfdESiQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBALItzm0HjqfMV8eyQ5VRdZZIO7dUsXcjbedF4ln4e49s4OY51pLvLRA7OxsVndrft3FpozNAaMvMWlZxJNAaThUEFb1osGvtSnW6twnrn8Vv9SSGylReM56NAOM2a6K8xu+8vIhZrZ1uJpvcjYL9iSqgy1IlxddL3eIWw6+1x6zU</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

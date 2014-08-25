@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{570B3406-5692-4549-AF88-DC03DF2560C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Octane_ViewModel</RootNamespace>
+    <AssemblyName>Octane_ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Impinj.OctaneSdk, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Debug\Impinj.OctaneSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="LLRP, Version=10.10.0.240, Culture=neutral, PublicKeyToken=450cec67a1cde3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Debug\LLRP.dll</HintPath>
+    </Reference>
+    <Reference Include="LLRP.Impinj, Version=10.10.0.240, Culture=neutral, PublicKeyToken=450cec67a1cde3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Debug\LLRP.Impinj.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="FeatureSet\FeatureSetViewModel.cs" />
+    <Compile Include="Interfaces\IMainWindowCallback.cs" />
+    <Compile Include="Log\LogEntryWpf.cs" />
+    <Compile Include="Log\LogViewModel.cs" />
+    <Compile Include="MainWindow\MainWindowViewModel.cs" />
+    <Compile Include="MainWindow\MainWindowViewModel_Callbacks.cs" />
+    <Compile Include="MainWindow\MainWindowViewModel_Commands.cs" />
+    <Compile Include="MainWindow\MainWindowViewModel_CreateReader.cs" />
+    <Compile Include="MainWindow\MainWindowViewModel_Properties.cs" />
+    <Compile Include="MainWindow\MainWindowViewModel_Synchronous.cs" />
+    <Compile Include="SettingsUI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingsUI.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Setting\AutoStartModeModel.cs" />
+    <Compile Include="Setting\AutoStopModeModel.cs" />
+    <Compile Include="Setting\EditSettingsWindowViewModel.cs" />
+    <Compile Include="Setting\ReaderModeModel.cs" />
+    <Compile Include="Setting\ReportModeModel.cs" />
+    <Compile Include="Setting\SearchModeModel.cs" />
+    <Compile Include="Setting\SettingsViewModel.cs" />
+    <Compile Include="SpeedwayReader\NewReaderModel.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_Callbacks.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_ChangeSettings.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_ClearSettingsAsync.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_Commands.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_ConnectAsync.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_DisconnectAsync.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_Properties.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_QueryFactorySettings.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_QueryStatus.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_QueryTags.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_ResumeAsync.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_StartAsync.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_StopAsync.cs" />
+    <Compile Include="SpeedwayReader\SpeedwayReaderViewModel_Synchronous.cs" />
+    <Compile Include="Status\StatusViewModel.cs" />
+    <Compile Include="Tag\TagPaneViewModel.cs" />
+    <Compile Include="Tag\TagWpf.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="ViewModelBase.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="SettingsUI.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingsUI.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

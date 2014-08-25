@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Template_Wpf.MainWindowMenuBar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    <Menu>
+        <MenuItem Header="Tools">
+            <MenuItem Header="New…" Click="NewMenuItem_Click" />
+            <MenuItem Header="Load Readers…" Command="{Binding NewReadersCommand}" />
+            <MenuItem Header="Connect All" Command="{Binding ConnectAllCommand}" />
+            <MenuItem Header="Disconnect All" Command="{Binding DisconnectAllCommand}" />
+            <MenuItem Header="Start All" Command="{Binding StartAllCommand}" />
+            <MenuItem Header="Stop All" Command="{Binding StopAllCommand}" />
+        </MenuItem>
+    </Menu>
+</UserControl>

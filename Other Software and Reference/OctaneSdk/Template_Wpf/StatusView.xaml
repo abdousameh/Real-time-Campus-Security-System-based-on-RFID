@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="Template_Wpf.StatusView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DockPanel LastChildFill="True">
+        <TreeView DockPanel.Dock="Top">
+
+             <TreeViewItem Header="Status" IsExpanded="False">
+                <!-- Reader Modes List -->
+                <TreeViewItem Header="Antennas" ItemsSource="{Binding AntennaStatuses}" IsExpanded="False">
+                    <TreeViewItem.ItemTemplate>
+                        <DataTemplate>
+                            <TreeViewItem>
+                                <TreeViewItem.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Content="{Binding PortNumber}" />
+                                        <Label Content="{Binding IsEnabled}" />
+                                        <Label Content="{Binding IsConnected}" />
+                                        <Label Content="{Binding State}" />
+                                    </StackPanel>
+                                </TreeViewItem.Header>
+                            </TreeViewItem>
+                        </DataTemplate>
+                    </TreeViewItem.ItemTemplate>
+                </TreeViewItem>
+
+                <!-- Gpi Status -->
+                <TreeViewItem Header="GPIs" ItemsSource="{Binding GpiStatuses}" IsExpanded="False">
+                    <TreeViewItem.ItemTemplate>
+                        <DataTemplate>
+                            <TreeViewItem>
+                                <TreeViewItem.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Content="{Binding PortNumber}" />
+                                        <Label Content="{Binding IsEnabled}" />
+                                        <Label Content="{Binding State}" />
+                                    </StackPanel>
+                                </TreeViewItem.Header>
+                            </TreeViewItem>
+                        </DataTemplate>
+                    </TreeViewItem.ItemTemplate>
+                </TreeViewItem>
+
+                <!-- Gpos -->
+                <TreeViewItem Header="GPOs" ItemsSource="{Binding GpoStatuses}" IsExpanded="False">
+                    <TreeViewItem.ItemTemplate>
+                        <DataTemplate>
+                            <TreeViewItem>
+                                <TreeViewItem.Header>
+                                    <StackPanel Orientation="Horizontal">
+                                        <Label Content="{Binding PortNumber}" />
+                                        <Label Content="{Binding State}" />
+                                    </StackPanel>
+                                </TreeViewItem.Header>
+                            </TreeViewItem>
+                        </DataTemplate>
+                    </TreeViewItem.ItemTemplate>
+                </TreeViewItem>
+
+                <TreeViewItem Header="{Binding Status.Connection}" HeaderStringFormat="Conneciton: {0}" />
+                <TreeViewItem Header="{Binding Status.IsConnected}" HeaderStringFormat="Is Connected: {0}" />
+                <TreeViewItem Header="{Binding Status.IsRunning}" HeaderStringFormat="Is Running: {0}" />
+                <TreeViewItem Header="{Binding Status.Operational}" HeaderStringFormat="Operational: {0}" />
+                <TreeViewItem Header="{Binding Status.ReaderIdentity}" HeaderStringFormat="Identity: {0}" />
+                <TreeViewItem Header="{Binding Status.TemperatureInCelsius}" HeaderStringFormat="Temp in C: {0}" />
+            </TreeViewItem>
+        </TreeView>
+    </DockPanel>
+</UserControl>

@@ -1,0 +1,14 @@
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Release\sqlitetest.exe.config
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Release\sqlitetest.exe
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Release\sqlitetest.pdb
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\ResolveAssemblyReference.cache
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\sqlitetest.Form1.resources
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\sqlitetest.Properties.Resources.resources
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\ResGen.read.1.tlog
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\ResGen.write.1.tlog
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\sqlitetest.exe
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\sqlitetest.pdb
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Release\sqlitetest.exe.manifest
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Release\sqlitetest.application
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\sqlitetest.exe.manifest
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Release\sqlitetest.application

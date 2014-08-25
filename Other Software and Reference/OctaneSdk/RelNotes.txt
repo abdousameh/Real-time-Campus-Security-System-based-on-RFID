@@ -1,0 +1,70 @@
+
+RELEASE NOTES FOR OCTANE SDK FOR .NET PLATFORMS
+================================================================
+
+This is release 1.0.0, Dec 15 2010
+
+* All examples work
+* Training workbook updated
+* Quick Reference Guide updated
+
+Resolved Issues since Beta 1.0.0.6
+
+11521 ProgramEpcResult.NumWordsWritten is wrong 
+* Documented number of words written is actually 
+  EPC word length + 1 (PC Bits)
+
+11447 RetryCount parameter is not implemented.
+* Fixed
+
+11569 Low Duty Cycle does not work
+* Fixed
+
+11570 32 bit block write does not work
+* Fixed
+
+Upgrade process 
+
+To upgrade your SDK, replace the following libraries in 
+your project with the updated files from the distribution
+and rebuild your project:
+
+LLRP.dll
+LLRP.Impinj.dll
+Impinj.OctaneSdk.dll
+
+Backwards Compatibility Note
+
+No Backwards compatibility issues have been identified between this
+release and Beta 1.0.0.6
+
+Debug Library Note
+
+Please note the OctaneSDK is released as a Debug-enabled build.
+
+================================================================
+
+This is Beta release candidate 1.0.0.6, July 27, 2010.
+
+This RC is for the Beta test of OctaneSdk for .Net.
+
+* All examples work
+* C# and VB console templates
+* Library complete
+  - Tag Access included
+* About half of technical reference (help) done
+* Training workbook
+
+Known Issues
+============
+* Technical Reference (Help) documentation is incomplete
+  - Most of what is missing is Tag Access related
+* WinForm and WPF templates missing
+  - Work in progress. Check with Ben for urgent situations.
+
+
+
+
+Changes in Beta 1.0.0.6 from Beta 1.0.0.4  July 27, 2010
+==============================================
+* SpeedwayReader.Connect() logs the OctaneSdk version.

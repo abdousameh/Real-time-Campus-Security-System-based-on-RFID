@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfNewReaderModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NewReaderModel>
+    <ReaderName>10.10.10.53</ReaderName>
+    <IsIncluded>true</IsIncluded>
+    <IsAutoConnected>false</IsAutoConnected>
+    <BrushColor>#a186be</BrushColor>
+  </NewReaderModel>
+  <NewReaderModel>
+    <ReaderName>10.10.10.56</ReaderName>
+    <IsIncluded>true</IsIncluded>
+    <IsAutoConnected>false</IsAutoConnected>
+    <BrushColor>#448ccb</BrushColor>
+  </NewReaderModel>
+  <NewReaderModel>
+    <ReaderName>10.10.10.58</ReaderName>
+    <IsIncluded>true</IsIncluded>
+    <IsAutoConnected>false</IsAutoConnected>
+    <BrushColor>#3cb878</BrushColor>
+  </NewReaderModel>
+  <NewReaderModel>
+    <ReaderName>10.10.10.66</ReaderName>
+    <IsIncluded>true</IsIncluded>
+    <IsAutoConnected>false</IsAutoConnected>
+    <BrushColor>#c4df9b</BrushColor>
+  </NewReaderModel>
+  <NewReaderModel>
+    <ReaderName>10.10.10.79</ReaderName>
+    <IsIncluded>true</IsIncluded>
+    <IsAutoConnected>true</IsAutoConnected>
+    <BrushColor>#f69679</BrushColor>
+  </NewReaderModel>
+</ArrayOfNewReaderModel>

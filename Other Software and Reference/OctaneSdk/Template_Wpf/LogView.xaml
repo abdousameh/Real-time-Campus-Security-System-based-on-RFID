@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="Template_Wpf.LogView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    >
+    <DockPanel LastChildFill="True">
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+            <Button Command="{Binding ClearLogEntriesCommand}" IsEnabled="{Binding IsLogEntryCountNonZero}" Content="Clear Log" Style="{StaticResource defaultButton}" />
+            <Label Content="{Binding Logs.Count}" ContentStringFormat="Logs: {0}" Style="{StaticResource defaultLabel}" />
+        </StackPanel>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                    <Label Width="50" Content="Thread" />
+                    <Label Width="125" Content="Identity" />
+                    <Label Width="35" Content="Rank" />
+                    <Label Width="100" Content="Origin" />
+                    <Label Width="80" Content="Level" />
+                    <Label Width="175" Content="Timestamp" />
+                    <Label Content="Message" />
+                </StackPanel>
+                <ListView ItemsSource="{Binding Logs}" DockPanel.Dock="Top" Background="AliceBlue" HorizontalContentAlignment="Stretch">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Canvas Width="10" Background="{Binding Color}" />
+                                    <Label Width="40" Content="{Binding ManagedThreadId}" />
+                                    <Label Width="125" Content="{Binding ReaderIdentity}" />
+                                    <Label Width="35" Content="{Binding Rank}" />
+                                    <Label Width="100" Content="{Binding Origin}" />
+                                    <Label Width="80" Content="{Binding Level}" />
+                                    <Label Width="175" Content="{Binding Timestamp}" ContentStringFormat=" {0:MMM d, yyyy  HH:mm:ss.fff}" DockPanel.Dock="Left" />
+                                    <Label Width="5"></Label>
+                                    <Label Content="{Binding Message}" />
+                                </StackPanel>
+                                <Canvas Height="1" Background="Gainsboro" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

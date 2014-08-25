@@ -1,0 +1,16 @@
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Debug\sqlitetest.exe
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Debug\sqlitetest.pdb
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\sqlitetest.Form1.resources
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\sqlitetest.Properties.Resources.resources
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\sqlitetest.exe
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\sqlitetest.pdb
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Debug\sqlitetest.exe.config
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\ResGen.read.1.tlog
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\ResGen.write.1.tlog
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Debug\sqlitetest.exe.manifest
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\bin\Debug\sqlitetest.application
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\sqlitetest.exe.manifest
+D:\visual studio 2010\Projects\sqlitetest\sqlitetest\obj\x86\Debug\sqlitetest.application

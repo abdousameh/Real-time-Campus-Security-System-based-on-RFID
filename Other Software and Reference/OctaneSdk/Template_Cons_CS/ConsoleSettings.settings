@@ -1,0 +1,100 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Template_Cons_CS" GeneratedClassName="ConsoleSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">connect &lt;machine_name&gt;</Value>
+    </Setting>
+    <Setting Name="ConnectDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Connects to a Speedway Reader.</Value>
+    </Setting>
+    <Setting Name="DisconnectSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">disconnect</Value>
+    </Setting>
+    <Setting Name="DisconnectDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Disconnects a connected Speedway Reader.</Value>
+    </Setting>
+    <Setting Name="LoadFactorySettingsSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">loadfactorysettings</Value>
+    </Setting>
+    <Setting Name="LoadFactorySetttingsDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Load factory settings clears the currently
+connected Speedway Reader's current
+settings, and replaces them with factory
+default settings.</Value>
+    </Setting>
+    <Setting Name="LogLevelSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">loglevel &lt;new_level&gt;</Value>
+    </Setting>
+    <Setting Name="LogLevelDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Changes the logging level of the library to the new level.</Value>
+    </Setting>
+    <Setting Name="QueryFactorySettingsSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">queryfactorysettings [file_path]</Value>
+    </Setting>
+    <Setting Name="QueryFactorySettingsDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Reads the factory settings from the
+connected Speedway Reader. Optionally
+it saves them to the path specified.</Value>
+    </Setting>
+    <Setting Name="QueryFeatureSetSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">queryfeatureset [file_path]</Value>
+    </Setting>
+    <Setting Name="QueryFeatureSetDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Reads the feature set from the connected
+Speedway Reader. Optionally it saves them
+to the path specified.</Value>
+    </Setting>
+    <Setting Name="QueryStatusSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">querystatus refreshtype [file_path]</Value>
+    </Setting>
+    <Setting Name="QueryStatusDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Reads the status from the connected
+Speedway Reader. Optionally it saves
+them to the path specified. Valid
+refresh type values are: None, Everything,
+JustAntennas, and JustGpis.</Value>
+    </Setting>
+    <Setting Name="QueryTagsSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">querytags &lt;duration_in_seconds&gt; [file_path]</Value>
+    </Setting>
+    <Setting Name="QueryTagsDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Queries tags from the connected Speedway
+Reader for the duration specified. Optionally
+it saves them to the path specified.</Value>
+    </Setting>
+    <Setting Name="QuitSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">quit</Value>
+    </Setting>
+    <Setting Name="QuitDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Quits the console.</Value>
+    </Setting>
+    <Setting Name="SaveSettingsSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">savesettings &lt;file_path&gt;</Value>
+    </Setting>
+    <Setting Name="SaveSettingsDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Saves the last known settings to the specified path.</Value>
+    </Setting>
+    <Setting Name="SetGpoSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">setgpo &lt;port_number&gt; &lt;new_level&gt;</Value>
+    </Setting>
+    <Setting Name="SetGpoDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Set the specified GPO port on the connected Speedway
+Reader to the new level.</Value>
+    </Setting>
+    <Setting Name="UpdateTagSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">updatetag &lt;match_tag_epc&gt; &lt;new_tag_epc&gt;</Value>
+    </Setting>
+    <Setting Name="UpdateTagDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Singulates tags on the connected Speedway Reader. If a match
+is found, the matched tag is updated with the new tag epc.</Value>
+    </Setting>
+    <Setting Name="LoadSettingsSynopsis" Type="System.String" Scope="User">
+      <Value Profile="(Default)">loadsettings &lt;file_path&gt;</Value>
+    </Setting>
+    <Setting Name="LoadSettingsDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Loads the settings from the specified path and changes
+the connected reader to use the settings.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
