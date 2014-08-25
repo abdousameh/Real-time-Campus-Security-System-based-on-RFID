@@ -1,2 +1,1 @@
-Real-time-Campus-Security-System-based-on-RFID
-==============================================
+Software of Real-time Campus Security System based on RFID
